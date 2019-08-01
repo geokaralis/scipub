@@ -1,0 +1,40 @@
+.related-articles {
+  padding-top: 1rem;
+}
+
+.related-articles__content {
+  padding: 2rem 0;
+}
+
+.related-articles__content .related-article:last-child {
+  border: none;
+}
+
+.related-articles__content .references__button {
+  border: none;
+}
+
+.related-articles__content .container {
+  margin-left: calc((100% - 52.5rem) / 2) ;
+  margin-right: auto;
+  max-width: 61.25rem;
+  // 350 -> 960
+  // 420 ->840
+}
+.related-articles__header {
+  background: #000000;
+border: 1px solid #E0E0E0;
+color: rgba(255, 255, 255, 0.87);
+
+}
+
+.related-articles__title {
+  font-weight: normal;
+  font-size: 1.375rem;
+}
+
+@media (max-width: 960px) {
+  .related-articles__content .container {
+    margin: 0 auto;
+  }
+}

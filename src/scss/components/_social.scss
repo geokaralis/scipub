@@ -1,0 +1,56 @@
+.social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links li a {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.social-links li a:hover {
+  opacity: 0.5;
+}
+
+.social-links .facebook {
+  background: url(../img/facebook-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+.social-links .twitter {
+  background: url(../img/twitter-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+.social-links .linkedin {
+  background: url(../img/linkedin-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+.social-links .mail {
+  background: url(../img/mail-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+.social-links .reddit {
+  background: url(../img/reddit-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+.social-links .stackoverflow {
+  background: url(../img/stackoverflow-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 960px) {
+  .social-links li a {
+    width: 2rem;
+    height: 2rem;
+  }
+}

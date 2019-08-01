@@ -1,0 +1,21 @@
+.list-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.list__primary {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.list__primary--bottom {
+  align-items: flex-end;
+}
+
+.list__primary--middle {
+  align-items: center;
+}

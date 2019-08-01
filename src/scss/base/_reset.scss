@@ -1,0 +1,40 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.main-page {
+  padding-top: 4.3125rem;
+}
+
+.container--fluid {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 87.5rem;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 52.5rem;
+}
+
+a {
+  outline-width: 0.0625rem;
+  outline-color: #2088C9;
+}
+
+button {
+  outline-width: 0.0625rem;
+  outline-color: #2088C9;
+}

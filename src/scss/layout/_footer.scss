@@ -1,0 +1,139 @@
+.main-footer {
+  border-top: 1rem solid #0E0E0E;
+}
+
+.main-footer__content {
+  padding: 1.5rem 0 0 0;
+}
+
+.foooter-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foooter-nav ul li a {
+  margin-bottom: 0.5rem;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.footnote {
+  padding: 2rem 0;
+}
+
+.footnote nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footnote nav ul li {
+
+}
+
+.footnote nav ul li::after {
+  content: '';
+  border-right: 1px solid #E0E0E0;
+}
+
+.footnote nav ul li:last-child::after {
+  border: none;
+}
+
+.footnote nav ul li a {
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 300;
+}
+
+.footnote nav ul li:first-child a {
+  padding-left: 0;
+}
+
+.copyright p {
+  margin: 0 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 300;
+}
+
+@media (max-width: 960px) {
+  .main-footer .container--fluid {
+    padding: 0;
+  }
+  .footnote {
+    padding: 0;
+    display: block!important;
+  }
+  .main-footer__content {
+    display: block!important;
+  }
+
+  .footnote nav ul {
+    display: block;
+    width: 100%;
+  }
+  .footnote nav ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .footnote nav ul li::after{
+    border: none;
+  }
+  .footnote nav ul li a {
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .footnote nav ul li:first-child a {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .footnote nav ul li:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .foooter-nav h4 {
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .foooter-nav ul {
+    padding: 0 1rem;
+    background: #EEEEEE;
+  }
+
+  .foooter-nav ul li a {
+    margin: 0;
+    padding-bottom:  1.5rem;
+  }
+
+  .foooter-nav ul li:first-child a {
+    padding-top:  1.5rem;
+  }
+  
+}
+
+@media (max-width: 560px) {
+  .copyright {
+    padding: 1rem;
+    flex-direction: column;
+  }
+}
