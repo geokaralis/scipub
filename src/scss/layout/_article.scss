@@ -181,6 +181,7 @@ color: rgba(0, 0, 0, 0.54);
 }
 
 .article__main-content .article-actions {
+  position: -webkit-sticky;
   position: sticky;
   top: 6rem;
   height: min-content;
@@ -259,6 +260,7 @@ flex-direction: column;
 }
 
 .article-nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 6rem;
   height: min-content;
@@ -321,7 +323,7 @@ width: 200px;
     width: 2rem;
     height: 0.5rem;
     transform: translateY(-50%);
-    background-image: url(/img/arrow-long-left.svg);
+    background-image: url(../img/arrow-long-left.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -340,7 +342,7 @@ width: 200px;
     width: 2rem;
     height: 0.5rem;
     transform: translateY(-50%);
-    background-image: url(/img/arrow-long-right.svg);
+    background-image: url(../img/arrow-long-right.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -537,14 +539,14 @@ border-top: 2px solid #E0E0E0;
 }
 
 .btn__solid--icon.play {
-  background-image: url(/img/play-icon.svg);
+  background-image: url(../img/play-icon.svg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
 }
 
 .btn__solid--icon.download {
-  background-image: url(/img/download-icon.svg);
+  background-image: url(../img/download-icon.svg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;

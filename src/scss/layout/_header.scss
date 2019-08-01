@@ -98,6 +98,7 @@
 }
 
 .main-header__search input[type="search"] {
+  -webkit-appearance: none;
   position: relative;
   background: transparent;
   border: none;
@@ -107,6 +108,7 @@ box-sizing: border-box;
 height: inherit;
 min-width: 260px;
 padding: 0 2rem 0 0.75rem;
+font-size: 1rem;
 }
 
 .search-field {
