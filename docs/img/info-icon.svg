@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="info-icon" transform="translate(6.000000, 6.000000)" fill="#757575" fill-rule="nonzero">
+            <path d="M6.00055714,0.285716571 C2.84341714,0.285716571 0.286272,2.84286 0.286272,6 C0.286272,9.15711429 2.84341714,11.7143143 6.00055714,11.7143143 C9.15771429,11.7143143 11.7148286,9.15711429 11.7148286,6 C11.7148286,2.84286 9.15771429,0.285716571 6.00055714,0.285716571 Z M6.57198857,8.85711429 L5.42912571,8.85711429 L5.42912571,5.42857714 L6.57198857,5.42857714 L6.57198857,8.85711429 Z M6.57198857,4.28571429 L5.42912571,4.28571429 L5.42912571,3.14286 L6.57198857,3.14286 L6.57198857,4.28571429 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
