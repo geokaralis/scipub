@@ -41,6 +41,7 @@ import './img/metrics-icon-24.svg';
 import './img/unlock-icon-24.svg';
 import './img/fullscreen-icon-24.svg';
 import './img/open-icon-24.svg';
+import './img/submenu-icon-24.svg';
 
 import './img/menu-icon.svg';
 import './img/login-icon.svg';
@@ -50,23 +51,6 @@ import './img/video-still.jpg';
 import './img/video-still-figure.jpg';
 
 console.log("Hello webpack");
-
-// const logo = document.getElementById('logo');
-// logo.src = Logo;
-
-// function component() {
-//   const element = document.createElement('div');
-//   element.innerHTML = "Hello, Wepback";
-//   element.classList.add('hello');
-
-//   const myIcon = new Image();
-//   myIcon.src = Logo;
-//   element.appendChild(myIcon);
-
-//   return element;
-// }
-
-// document.body.appendChild(component());
 
 var el = document.getElementById('main-header-bottom');
 var elTop = el.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
@@ -108,3 +92,34 @@ function progress(progressBar, element) {
 }
 
 progress('.progress-bar', '.main-article');
+
+function observeFormatsButton(el) {
+  el.innerText = "Formats";
+}
+
+const viewAllFormatsButton = document.getElementById('view-all-formats');
+const text = viewAllFormatsButton.innerText;
+
+window.addEventListener('resize', () => {
+  
+  if (window.matchMedia('(max-width: 960px)').matches) {
+    observeFormatsButton(viewAllFormatsButton);
+  } else if(window.matchMedia('(min-width: 960px)').matches) {
+    viewAllFormatsButton.innerText = text;
+  }
+});
+
+
+
+
+// util
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);

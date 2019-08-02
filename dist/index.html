@@ -214,7 +214,7 @@
           <a href="#" class="btn btn--icon notification">Notifications</a>
           <a href="#" class="btn btn--icon addtofolder">Add to Folder</a>
           <a href="#" class="btn btn--icon citation">Citation</a>
-          <a href="#" class="btn btn__solid--icon view">View all formats</a>
+          <a href="#" id="view-all-formats" class="btn btn__solid--icon view">View all formats</a>
           <a href="#" class="btn btn__solid--icon pdf">PDF</a>
         </aside>
       </header>
@@ -236,7 +236,7 @@
           </div>
 
           <ul class="article-nav__nav">
-            <li><a href="">Abstract</a></li>
+            <li><a class="article-nav__link--active" href="">Abstract</a></li>
             <li><a href="">Introduction</a></li>
             <li><a href="">Methods</a></li>
             <li><a href="">Results</a></li>
@@ -244,7 +244,7 @@
             <li><a href="">Footnotes</a></li>
             <li><a href="">References</a></li>
             <li><a href="">Supplementary Material</a></li>
-            <li><a href="">Comments</a></li>
+            <li><a class="article-nav__labeled" href="">Comments <span>17</span> </a></li>
           </ul>
 
           <div class="article-nav__footer">
@@ -254,10 +254,12 @@
         </nav>
 
         <aside class="article-actions">
+          <a href="#" class="article-actions__button open-article-nav">Open article nav</a>
           <a href="#" class="article-actions__button info">Info</a>
           <a href="#" class="article-actions__button metrics">Metrics</a>
           <a href="#" class="article-actions__button view">View</a>
-          <a href="#" class="article-actions__button references">References</a>
+          <a href="#" class="article-actions__button references article-actions__label"> <span>150+</span>
+            References</a>
           <a href="#" class="article-actions__button figures">Figures</a>
           <a href="#" class="article-actions__button tables">Tables</a>
           <a href="#" class="article-actions__button share">Share</a>
@@ -290,7 +292,8 @@
               <div class="article-figure__content flex flex--center">
                 <img src="img/video-still-figure.jpg" alt="Video still">
               </div>
-              <figcaption class="article-figure__caption" id="fig-t3-capt"><span>Video 1: </span>Exploring the effects of centrality in parallel systems</figcaption>
+              <figcaption class="article-figure__caption" id="fig-t3-capt"><span>Video 1: </span>Exploring the effects
+                of centrality in parallel systems</figcaption>
             </figure>
           </section>
 
@@ -310,12 +313,12 @@
             <figure id="figure-table" class="article-figure collapsed" role="group" aria-labelledby="fig-t4-capt">
 
               <header class="article-figure__header flex flex--middle">
-                  <h4 class="article-figure__title">Table 1. Gamification and other concepts evolution</h4>
-                  <div class="article-figure__actions ml-auto flex">
-                    <button class="fullscreen">Fullscreen</button>
-                    <button class="open">Open</button>
-                  </div>
-                </header>
+                <h4 class="article-figure__title">Table 1. Gamification and other concepts evolution</h4>
+                <div class="article-figure__actions ml-auto flex">
+                  <button class="fullscreen">Fullscreen</button>
+                  <button class="open">Open</button>
+                </div>
+              </header>
 
               <div class="article-figure__content">
                 <table class="article-figure__table">
@@ -374,43 +377,44 @@
                     <td>-8.82%</td>
                   </tr>
                   <tr>
-                      <td>Simulation Games</td>
-                      <td>1480</td>
-                      <td>3250</td>
-                      <td>17.04%</td>
-                      <td>219</td>
-                      <td>138</td>
-                      <td>-8.82%</td>
-                    </tr>
-                    <tr>
-                        <td>Simulation Games</td>
-                        <td>1480</td>
-                        <td>3250</td>
-                        <td>17.04%</td>
-                        <td>219</td>
-                        <td>138</td>
-                        <td>-8.82%</td>
-                      </tr>
-                      <tr>
-                          <td>Simulation Games</td>
-                          <td>1480</td>
-                          <td>3250</td>
-                          <td>17.04%</td>
-                          <td>219</td>
-                          <td>138</td>
-                          <td>-8.82%</td>
-                        </tr>
+                    <td>Simulation Games</td>
+                    <td>1480</td>
+                    <td>3250</td>
+                    <td>17.04%</td>
+                    <td>219</td>
+                    <td>138</td>
+                    <td>-8.82%</td>
+                  </tr>
+                  <tr>
+                    <td>Simulation Games</td>
+                    <td>1480</td>
+                    <td>3250</td>
+                    <td>17.04%</td>
+                    <td>219</td>
+                    <td>138</td>
+                    <td>-8.82%</td>
+                  </tr>
+                  <tr>
+                    <td>Simulation Games</td>
+                    <td>1480</td>
+                    <td>3250</td>
+                    <td>17.04%</td>
+                    <td>219</td>
+                    <td>138</td>
+                    <td>-8.82%</td>
+                  </tr>
                 </table>
               </div>
 
               <div class="table__more-button">
-                  <a id="figure-show-more" class="" href="#">
-                    Show more
-                  </a>
+                <a id="figure-show-more" class="" href="#">
+                  Show more
+                </a>
               </div>
 
 
-              <figcaption class="article-figure__caption" id="fig-t4-capt"> <span>Table 1: </span>Exploring gamification techniques within game genres concepts. Evolutions metrics generated.</figcaption>
+              <figcaption class="article-figure__caption" id="fig-t4-capt"> <span>Table 1: </span>Exploring gamification
+                techniques within game genres concepts. Evolutions metrics generated.</figcaption>
             </figure>
           </section>
 
@@ -421,10 +425,11 @@
                 <li>
                   This author was an editor of this journal during the review and decision stage. For the JMR policy on
                   review and publication of manuscripts authored by editors, please refer to
-                  http://www.mrs.org/editor-manuscripts/.
+                  http://www.mrs.org/editor-manuscripts/. <a class="button--link" href="">Link</a>
                 </li>
                 <li>
-                  Address all correspondence to this author. e-mail: a.lloyd5@lboro.ac.uk
+                  Address all correspondence to this author. e-mail: a.lloyd5@lboro.ac.uk <a class="button--link"
+                    href="">Link</a>
                 </li>
               </ol>
             </section>
@@ -433,18 +438,19 @@
               <ol class="references">
                 <li>
                   Tor M. Aamodt and Paul Chow. 2008. Compile-time and instruction-set methods for improving floating-to
-                  fixed-point conversion accuracy. ACM Transactions on Embedded Computing Systems 7, 3, 26. | Cross Ref
-                  | Google Scholar
+                  fixed-point conversion accuracy. ACM Transactions on Embedded Computing Systems 7, 3, 26. <a
+                    class="button--link" href="">Link</a> | <a href="">Cross Ref </a> | <a href="">Google Scholar</a>
                 </li>
                 <li>
                   Bülent Abali, Hubertus Franke, Dan E. Poff, Robert A. Saccone, Jr., Charles O. Schulz, Lorraine M.
                   Herger, and T. Basil Smith. 2001. Memory expansion technology (MXT): software support and performance.
-                  IBM Journal of Research and Development 45, 2, 287--301. | Cross Ref | Google Scholar
+                  IBM Journal of Research and Development 45, 2, 287--301. <a class="button--link" href="">Link</a> | <a
+                    href="">Cross Ref </a> | <a href="">Google Scholar</a>
                 </li>
-                <!-- <li>Don Adams. 1993. CRAY T3D System Architecture Overview Manual. Retrieved November 29, 2017 from ftp://ftp.cray.com/product-info/mpp/T3D_Architecture_Over/T3D.overview.html. | Cross Ref Google Scholar</li> -->
                 <li>Ismail Akturk, Karen Khatamifard, and Ulya R. Karpuzcu. 2015. On quantification of accuracy loss in
-                  approximate computing. In Workshop on Duplicating, Deconstructing and Debunking. (WDDD’15). 15. |
-                  Cross Ref | Google Scholar</li>
+                  approximate computing. In Workshop on Duplicating, Deconstructing and Debunking. (WDDD’15). 15. <a
+                    class="button--link" href="">Link</a> | <a href="">Cross Ref </a> | <a href="">Google Scholar</a>
+                </li>
               </ol>
               <div class="references__button">
                 <a class="btn btn__ghost" href="#">Show All References</a>
@@ -695,6 +701,13 @@
             <li><a href="">Announcements</a></li>
             <li><a href="">Apps</a></li>
             <li><a href="">Contact Us</a></li>
+          </ul>
+
+          <ul class="foooter-nav__social">
+            <li><a class="facebook" href="">Facebook</a></li>
+            <li><a class="twitter" href="">Twitter</a></li>
+            <li><a class="linkedin" href="">Linkedin</a></li>
+            <li><a class="rss" href="">Rss</a></li>
           </ul>
         </div>
       </div>

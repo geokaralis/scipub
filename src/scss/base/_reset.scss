@@ -1,6 +1,14 @@
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 100%;
 }
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 body {
   margin: 0;
@@ -9,6 +17,7 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
+overflow-x: hidden;
 }
 
 .main-page {

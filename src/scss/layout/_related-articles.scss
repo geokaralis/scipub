@@ -22,10 +22,14 @@
   // 420 ->840
 }
 .related-articles__header {
+  padding: 1rem 0;
   background: #000000;
-border: 1px solid #E0E0E0;
 color: rgba(255, 255, 255, 0.87);
 
+}
+
+.related-articles__header h4 {
+  margin: 0;
 }
 
 .related-articles__title {
