@@ -3,7 +3,7 @@
 }
 
 .main-footer__content {
-  padding: 1.5rem 0 0 0;
+  padding: 0.5rem 0 2rem 0;
 }
 
 .foooter-nav ul {
@@ -22,7 +22,7 @@
 }
 
 .footnote {
-  padding: 2rem 0;
+  padding: 2rem 0 0.75rem 0;
 }
 
 .footnote nav ul {
@@ -93,6 +93,14 @@
   background-size: 0.875rem;
 }
 
+.copyright svg {
+  height: 24px;
+}
+
+.mobile-footer-follow {
+  display: none;
+}
+
 @media (max-width: 960px) {
   .main-footer .container--fluid {
     padding: 0;
@@ -160,6 +168,43 @@
 
   .foooter-nav__social {
     display: none;
+  }
+
+  .main-footer__content {
+    padding: 0;
+  }
+
+  .mobile-footer-follow {
+    padding: 0 1rem;
+    display: flex;
+  }
+
+  .mobile-footer-follow h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .mobile-footer-follow .social-links {
+    margin-left: auto!important;
+  }
+
+  .mobile-footer-follow .social-links li {
+    margin-left: 0.5rem;
+  }
+
+  .mobile-footer-follow .facebook {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M13.426 18.805h-2.6v-6.26H8.773V10.23h2.053V8.325c0-1.089.274-1.77.821-2.314.547-.544 1.505-.817 2.464-.817.82 0 1.368 0 1.916.136v2.178h-1.369c-.41 0-.821.136-.958.272-.137.137-.274.409-.274.817v1.497h2.464l-.41 2.45h-2.054v6.261z'/%3E%3C/svg%3E") no-repeat center!important;
+    background-size: contain!important;
+  }
+
+  .social-links .twitter {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M17.468 8.9v.453c0 1.059-.277 2.118-.553 3.025s-.829 1.966-1.52 2.874c-.69.907-1.52 1.512-2.625 2.117s-2.21.756-3.454.756c-1.52 0-2.902-.454-4.283-1.361h.69c1.382 0 2.488-.454 3.593-1.361-.69 0-1.244-.303-1.658-.605-.415-.303-.829-.908-.967-1.513h.552c.277 0 .553 0 .691-.15-.69 0-1.243-.454-1.658-.908-.414-.454-.69-1.21-.69-1.966.414.151.828.302 1.243.302C6 9.958 5.585 9.051 5.585 7.993c0-.606.139-1.06.415-1.513a8.116 8.116 0 0 0 2.625 2.268c1.105.605 2.073.908 3.316.908V8.9c0-.908.276-1.513.829-2.118.553-.605 1.105-.907 1.796-.907.83 0 1.52.302 2.073.907.69-.15 1.243-.453 1.796-.756-.138.756-.553 1.361-1.244 1.815l1.658-.454A6.895 6.895 0 0 1 17.468 8.9z'/%3E%3C/svg%3E") no-repeat center!important;
+    background-size: contain!important;
+  }
+  
+  .social-links .linkedin {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23000' fill-rule='nonzero' d='M9.164 6.82c0 .407-.139.814-.553 1.22-.415.407-.69.407-1.105.407-.415 0-.83-.136-1.106-.407-.276-.271-.552-.813-.552-1.22 0-.406.138-.813.552-1.22.415-.406.691-.406 1.106-.406.414 0 .829.136 1.243.542.415.407.415.678.415 1.084zm0 2.982v8.537c0 .135 0 .135-.139.27-.138.136-.138.136-.276.136H6.262c-.138 0-.138 0-.276-.135-.138-.136 0-.136 0-.271V9.802c0-.136 0-.136.138-.271.138-.136.138-.136.276-.136h2.487c.138 0 .138 0 .277.136.138.135 0 .135 0 .27zm7.046 2.303c-.138-.135-.553-.27-.967-.27-.553 0-.967.135-1.244.406-.276.27-.414.948-.414 1.49v4.608c0 .135 0 .135-.138.27l-.138.136h-2.487c-.139 0-.139 0-.277-.135-.138-.136-.138-.136-.138-.271V9.802c0-.136 0-.136.138-.271.138-.136.138-.136.277-.136h2.625c.138 0 .138.136.138.136v.406c.553-.406 1.382-.677 2.487-.677 1.105 0 2.072.27 2.625.813.553.542.967 1.355.967 2.574v5.827c0 .136 0 .136-.138.271-.138.136-.138 0-.138 0h-2.625c-.139 0-.139 0-.277-.135-.138-.136 0-.136 0-.271v-5.15c0-.542-.138-.813-.276-1.084z'/%3E%3C/svg%3E") no-repeat center!important;
+    background-size: contain!important;
   }
   
 }

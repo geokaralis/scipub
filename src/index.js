@@ -50,6 +50,13 @@ import './img/logo-mobile.svg';
 import './img/video-still.jpg';
 import './img/video-still-figure.jpg';
 
+import './img/favicon-48.png';
+
+import './img/results-reproduced.png'
+import './img/artifacts-evaluated-functional.png'
+
+import Authors from './js/authors';
+
 console.log("Hello webpack");
 
 var el = document.getElementById('main-header-bottom');
@@ -100,6 +107,8 @@ function observeFormatsButton(el) {
 const viewAllFormatsButton = document.getElementById('view-all-formats');
 const text = viewAllFormatsButton.innerText;
 
+observeFormatsButton(viewAllFormatsButton);
+
 window.addEventListener('resize', () => {
   
   if (window.matchMedia('(max-width: 960px)').matches) {
@@ -109,8 +118,110 @@ window.addEventListener('resize', () => {
   }
 });
 
+function setLabelText(label, origin) {
+  const mq = window.matchMedia('(max-width: 600px)');
+  if (mq.matches) {
+    label.innerHTML = 'Article <span>Open Access</span>';
+  } else {
+    label.innerHTML = origin;
+  }
+}
 
 
+
+function changeArticleLabel() {
+  const articleLabel = document.querySelector('.article-header__label');
+  const originalText = articleLabel.innerHTML;
+
+  setLabelText(articleLabel, originalText);
+
+  window.addEventListener('resize', () => {
+    setLabelText(articleLabel, originalText);
+  });
+}
+
+changeArticleLabel();
+
+const authors = document.querySelector('.related-article__authors');
+
+// console.log(authors.childNodes);
+
+// const wrapper = document.getElementById('test') // take a wrapper by ID -> fastest
+// const itemsArray = Array.from(authors.children) // make Array from his children
+
+// const pickOne = itemsArray.map(item => { // loop over his children using .map() --> see MDN for more
+//   var len = itemsArray.length;
+//    if(item.classList.contains('author')) {
+//      itemsArray.splice(1,1);
+//      console.log(len);
+//    }
+    
+// })
+
+// pickOne;
+
+// function getAuthors() {
+//   const authors = document.querySelector('.related-article__authors');
+//   const authorsChildren = Array.from(authors.children);
+
+//   let saved = [];
+
+//   authorsChildren.forEach((item) => {
+//     if(item.classList.contains('author') || item.classList.contains('authors__title')) {
+//       saved.push(item);
+//     }
+
+
+//   })
+
+//   return saved;
+// }
+
+// function removeAuthors() {
+//   let authorsArr = getAuthors();
+
+
+//     authorsArr.splice(4, authorsArr.length - 4);
+
+//     console.log(authorsArr)
+
+//     const authors = document.querySelector('.related-article__authors');
+//     authors.innerHTML = '';
+
+//     authorsArr.forEach((item) => {
+//       authors.appendChild(item)
+//     })
+
+
+  
+// }
+
+// removeAuthors();
+
+function shrinkAuthors() {
+  const authorsElement = document.querySelector('.related-article__authors');
+  const authors = new Authors(authorsElement);
+
+  let titles = authors.titles();
+  let links = authors.links();
+  let authorsArray = authors.authors();
+
+  titles.pop(); // remove editors title
+
+  authors.removeItems(authorsArray, 7);
+
+  let lastAuthor = authors.peek(authorsArray);
+  lastAuthor.innerText = lastAuthor.innerText.replace(/,/g, '...');
+
+  let constructed = [...titles, ...authorsArray, ...links];
+  authorsElement.innerHTML = '';
+
+  constructed.forEach((item) => {
+    authorsElement.appendChild(item);
+  });
+}
+
+shrinkAuthors();
 
 // util
 var docWidth = document.documentElement.offsetWidth;
