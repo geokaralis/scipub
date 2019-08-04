@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu" transform="translate(0.000000, 4.000000)" fill="#0E0E0E" fill-rule="nonzero">
+            <path d="M0.24,15.36 L23.568864,15.36 L23.568864,12.799968 L0.24,12.799968 L0.24,15.36 Z M0.24,8.9599968 L23.568864,8.9599968 L23.568864,6.4000032 L0.24,6.4000032 L0.24,8.9599968 Z M0.24,0 L0.24,2.5600032 L23.568864,2.5600032 L23.568864,0 L0.24,0 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
