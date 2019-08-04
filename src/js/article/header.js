@@ -1,19 +1,18 @@
-function observeFormatsButton(el) {
-  el.innerText = "Formats";
+function observeFormatsButton(el, text) {
+  if (window.matchMedia('(max-width: 960px)').matches) {
+    el.innerText = "Formats";
+  } else if (window.matchMedia('(min-width: 960px)').matches) {
+    el.innerText = text;
+  }
 }
 
 const viewAllFormatsButton = document.getElementById('view-all-formats');
 const text = viewAllFormatsButton.innerText;
 
-observeFormatsButton(viewAllFormatsButton);
+observeFormatsButton(viewAllFormatsButton, text);
 
 window.addEventListener('resize', () => {
-
-  if (window.matchMedia('(max-width: 960px)').matches) {
-    observeFormatsButton(viewAllFormatsButton);
-  } else if (window.matchMedia('(min-width: 960px)').matches) {
-    viewAllFormatsButton.innerText = text;
-  }
+  observeFormatsButton(viewAllFormatsButton, text);
 });
 
 function setLabelText(label, origin) {
