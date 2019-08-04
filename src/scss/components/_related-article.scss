@@ -33,6 +33,11 @@
   font-family: 'Merriweather', sans-serif;
   font-weight: normal;
   font-size: 1.0625rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.related-article__title:hover {
+  opacity: 0.8;
 }
 
 .related-article__meta {

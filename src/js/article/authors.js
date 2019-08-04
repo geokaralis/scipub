@@ -40,7 +40,7 @@ class Authors {
     return children;
   }
 
-  removeItems(array, item) {
+  remove(array, item) {
     for ( var i = 0; i < item; i++ ) {
         array.pop();
     }

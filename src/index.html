@@ -298,7 +298,10 @@
               </header>
 
               <div class="article-figure__content flex flex--center">
-                <img src="img/video-still-figure.jpg" alt="Video still">
+                <div class="article-figure__video">
+                    <img src="img/video-still-figure.jpg" alt="Video still">
+                    <button>Play</button>
+                </div>
               </div>
               <figcaption class="article-figure__caption" id="fig-t3-capt"><span>Video 1: </span>Exploring the effects
                 of centrality in parallel systems</figcaption>
@@ -703,9 +706,9 @@
             </ul>
         </div>
 
-        <div class="foooter-nav">
-          <h4>Categories</h4>
-          <ul>
+        <div class="foooter-nav accordion">
+          <h4 class="accordion__toggle">Categories</h4>
+          <ul class="accordion__content">
             <li><a href="">Journals</a></li>
             <li><a href="">Magazines</a></li>
             <li><a href="">Proceedings</a></li>
@@ -715,9 +718,9 @@
           </ul>
         </div>
 
-        <div class="foooter-nav">
-          <h4>About</h4>
-          <ul>
+        <div class="foooter-nav accordion">
+          <h4 class="accordion__toggle">About</h4>
+          <ul class="accordion__content">
 
             <li><a href="">About Us</a></li>
             <li><a href="">Subscription Information</a></li>
@@ -725,9 +728,9 @@
           </ul>
         </div>
 
-        <div class="foooter-nav">
-          <h4>Subscriptions</h4>
-          <ul>
+        <div class="foooter-nav accordion">
+          <h4 class="accordion__toggle">Subscriptions</h4>
+          <ul class="accordion__content">
 
             <li><a href="">Join Us</a></li>
             <li><a href="">Subscribe to Publications</a></li>
@@ -735,21 +738,24 @@
           </ul>
         </div>
 
-        <div class="foooter-nav">
-          <h4>Connect</h4>
-          <ul>
+        <div class="foooter-nav accordion">
+          <h4 class="accordion__toggle">Connect</h4>
+          <div class="accordion__content">
+            <ul>
 
-            <li><a href="">Announcements</a></li>
-            <li><a href="">Apps</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
+              <li><a href="">Announcements</a></li>
+              <li><a href="">Apps</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+  
+            <ul class="foooter-nav__social">
+              <li><a class="facebook" href="">Facebook</a></li>
+              <li><a class="twitter" href="">Twitter</a></li>
+              <li><a class="linkedin" href="">Linkedin</a></li>
+              <li><a class="rss" href="">Rss</a></li>
+            </ul>
+          </div>
 
-          <ul class="foooter-nav__social">
-            <li><a class="facebook" href="">Facebook</a></li>
-            <li><a class="twitter" href="">Twitter</a></li>
-            <li><a class="linkedin" href="">Linkedin</a></li>
-            <li><a class="rss" href="">Rss</a></li>
-          </ul>
         </div>
       </div>
 
