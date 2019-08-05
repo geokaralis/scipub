@@ -67,9 +67,9 @@ const shrinkOnMobile = function(element) {
     bounds(element, children);
   }
 
-  window.addEventListener('resize', () => {
-    bounds(element, children);
-  });
+  // window.addEventListener('resize', () => {
+  //   bounds(element, children);
+  // });
 }
 
 shrinkOnMobile(authors);
